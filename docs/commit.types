@@ -7,7 +7,7 @@ List of available conventional commit types:
 | Type     | Title                    | Description                                                                                                 |
 | -------- | ------------------------ | ----------------------------------------------------------------------------------------------------------- |
 | add      | Added                    | Added something to project scope (example scopes: folder, file)                                             |
-| change   | Changes                  | A code change that alters exsisting fucntionality (example scopes: breaking)                                |
+| change   | Changes                  | A code change that alters exsisting fucntionality (example scopes: breaking, update)                        |
 | feat     | Features                 | A new feature                                                                                               |
 | fix      | Bug Fixes                | A bug fix                                                                                                   |
 | docs     | Documentation            | Documentation only changes                                                                                  |
