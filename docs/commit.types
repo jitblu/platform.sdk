@@ -22,6 +22,7 @@ List of available conventional commit types:
 | obsolete | Deprecated               | Deprecated feature that will be removed                                                                     |
 | wip      | Work In Progress         | A commit that will be squashed later                                                                        |
 | sec      | Security                 | Used in case of vulnerabilities                                                                             |
+| remove   | Removed                  | A permanent removal of any change, file or feature                                                          |
 | initial  | Initial                  | Initial commit                                                                                              |
 
 
