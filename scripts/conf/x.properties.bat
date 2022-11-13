@@ -9,7 +9,7 @@
 :: Project ......: Part of the Platform TMS Project
 :: Description ..: Properties Include File
 :: Project URL ..: https://gitlab.com/carrierlane/platform.tms
-:: Usage ........: Run this file directly, or from the Windows Start Menu
+:: Usage ........: This file is called from the main script
 ::
 :: Author .......: p.stewart <p.stewart@carrierlane.com>
 :: Copyright ....: Copyright (C) 2009-2022 Carrierlane, Inc.
@@ -47,8 +47,15 @@ set /p PLATFORM_VERSION=< %PLATFORM_DIRECTORY%\.dist.semver
 :: setting project copyright from .dist.copyright file
 set /p PLATFORM_COPYRIGHT=< %PLATFORM_DIRECTORY%\.dist.copyright
 
+:: ### COMPUTER #######################################################################
+
 :: ### COMPILER #######################################################################
 
 :: ### FILESYSTEM #####################################################################
 
 :: ### COMMANDS #######################################################################
+
+set WGET=%PLATFORM_DIRECTORY%\tools\bin\wget.exe
+set CURL=%PLATFORM_DIRECTORY%\tools\bin\curl.exe
+set TOUCH=%PLATFORM_DIRECTORY%\tools\bin\touch.exe
+set UNAME=%PLATFORM_DIRECTORY%\tools\bin\uname.exe

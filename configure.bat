@@ -104,6 +104,11 @@ echo ==================================
 echo *       Download Archives        *
 echo ==================================
 
+echo Downloading Required Archives
+
+rmdir /s /q downloads 2> nul
+mkdir downloads 2> nul
+
 pause
 goto menu
 
@@ -164,28 +169,20 @@ echo ==================================
 echo *        Clean Solution          *
 echo ==================================
 
+echo Cleaning Solution
+
+echo Removing Downloads Folder
+rmdir /s /q downloads 2> nul
+
 pause
 goto menu
 
 :: help menu invoked from commandline
 :help
-    date /t
-    echo =================================================================================
-	echo This script will help you to build a portable development environment for your
-    echo project. The IDE lives inside your project structure and can be duplicated
-    echo and copied to different workstations or installed on a flash drive.
-    echo =================================================================================
-	echo Usage:
-	echo    Nothing - to compile with default compiler and architecture
-	echo    x86     - to compile with x86 (32-bit) architecture
-	echo    amd64   - to compile with amd64 (x86 64-bit) architecture
-	echo    gcc     - to compile with GCC (MinGW) compiler
-	echo    vs      - to compile with Visual Studio compiler
-	echo    help    - prints this help message
-    echo --
-	echo Visit https://gitlab.com/carrierlane/platform.tms to know more about the project
-    echo =================================================================================
-	exit /b 0
+
+:: import help screen
+call scripts/conf/x.help.bat
+exit /b 0
 
 :: error banner "displayed when selecting wrong option"
 :error
