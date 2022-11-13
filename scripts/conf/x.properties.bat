@@ -6,13 +6,13 @@
 :: |_|   |_|\__,_|\__|_|  \___/|_|  |_| |_| |_|
 ::
 :: Name .........: x.properties.bat
-:: Project ......: Part of the Platform TMS Project
+:: Project ......: Part of the Platform SDK Project
 :: Description ..: Properties Include File
-:: Project URL ..: https://gitlab.com/carrierlane/platform.tms
+:: Project URL ..: https://github.com/jitblu/platform.sdk
 :: Usage ........: This file is called from the main script
 ::
-:: Author .......: p.stewart <p.stewart@carrierlane.com>
-:: Copyright ....: Copyright (C) 2009-2022 Carrierlane, Inc.
+:: Author .......: opensource team <opensource@jitblu.com>
+:: Copyright ....: Copyright (C) 2009-2022 JitBlu, Inc.
 :: License ......: Apache v2.0
 ::
 :: Licensed under the Apache License, Version 2.0 (the "License");

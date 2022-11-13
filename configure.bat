@@ -6,13 +6,13 @@
 :: |_|   |_|\__,_|\__|_|  \___/|_|  |_| |_| |_|
 ::
 :: Name .........: configure.bat
-:: Project ......: Part of the Platform Project
-:: Description ..: Main IDE Configuration Entry Point
-:: Project URL ..: https://gitlab.com/carrierlane/platform.tms
+:: Project ......: Part of the Platform SDKProject
+:: Description ..: Main Configuration Entry Point
+:: Project URL ..: https://github.com/jitblu/platform.sdk
 :: Usage ........: Run this file directly, or from the Windows Start Menu
 ::
-:: Author .......: p.stewart <p.stewart@carrierlane.com>
-:: Copyright ....: Copyright (C) 2009-2022 Carrierlane, Inc.
+:: Author .......: opensource team <opensource@jitblu.com>
+:: Copyright ....: Copyright (C) 2009-2022 JitBlu, Inc.
 :: License ......: Apache v2.0
 ::
 :: Licensed under the Apache License, Version 2.0 (the "License");
