@@ -6,7 +6,7 @@
 :: |_|   |_|\__,_|\__|_|  \___/|_|  |_| |_| |_|
 ::
 :: Name .........: configure.bat
-:: Project ......: Part of the Platform SDKProject
+:: Project ......: Part of the Platform SDK Project
 :: Description ..: Main Configuration Entry Point
 :: Project URL ..: https://github.com/jitblu/platform.sdk
 :: Usage ........: Run this file directly, or from the Windows Start Menu
