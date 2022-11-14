@@ -112,6 +112,8 @@ call scripts/conf/x.url.bat
 :: rmdir /s /q downloads 2> nul
 mkdir downloads 2> nul
 
+:: ### Free B4X Downloads #########################################################################
+
 IF EXIST "%DOWNLOADS%/B4J.exe" (
     echo B4J Already Downloaded Skipping...
 ) ELSE (
@@ -130,10 +132,38 @@ IF EXIST "%DOWNLOADS%/B4R.exe" (
     %WGET% --no-check-certificate %URL_B4R% -P %DOWNLOADS%
 )
 
+:: ### Paid B4X Downloads #########################################################################
+
 IF EXIST "%DOWNLOADS%/B4I.exe" (
     echo B4I Already Downloaded Skipping...
 ) ELSE (
     %WGET% --no-check-certificate %URL_B4I% -P %DOWNLOADS%
+)
+
+:: ### SDK Downloads ##############################################################################
+
+IF EXIST "%DOWNLOADS%/jdk-11.0.1.zip" (
+    echo JDK Already Downloaded Skipping...
+) ELSE (
+    %CURL% -k %URL_JDK% --output %DOWNLOADS%/jdk-11.0.1.zip
+)
+
+IF EXIST "%DOWNLOADS%/commandlinetools-win-6609375_latest.zip" (
+    echo Android SDK Already Downloaded Skipping...
+) ELSE (
+    %WGET% --no-check-certificate %URL_ASDK% -P %DOWNLOADS%
+)
+
+IF EXIST "%DOWNLOADS%/resources_06_21.zip" (
+    echo Android Resources Already Downloaded Skipping...
+) ELSE (
+    %CURL% -k %URL_ARES% --output %DOWNLOADS%/resources_06_21.zip
+)
+
+IF EXIST "%DOWNLOADS%/arduino-1.8.18-windows.zip" (
+    echo Arduino IDE Already Downloaded Skipping...
+) ELSE (
+    %CURL% -k %URL_AIDE% --output %DOWNLOADS%/arduino-1.8.18-windows.zip
 )
 
 pause
