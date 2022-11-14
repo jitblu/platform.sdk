@@ -1,5 +1,6 @@
 bin/
 spike/
 downloads/
+.vscode/
 
 scripts/conf/x.url.bat
