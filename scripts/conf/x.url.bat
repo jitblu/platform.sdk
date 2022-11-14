@@ -36,7 +36,8 @@ set URL_B4R=https://www.b4x.com/b4r/files/B4R.exe
 
 :: ### Paid B4X URL's #########################################################################
 
-set URL_B4I="INSERT YOUR PAID URL HERE"
+set URL_B4I="INSERT YOUR PAID URL B4I HERE"
+set URL_MACB="INSERT YOUR PAID URL FOR MAC BUILDER HERE"
 
 :: ### SDK URL's #########################################################################
 
