@@ -114,30 +114,41 @@ mkdir downloads 2> nul
 
 :: ### Free B4X Downloads #########################################################################
 
-IF EXIST "%DOWNLOADS%/B4J.exe" (
+IF EXIST "%DOWNLOADS%/%FILE_B4J%" (
     echo B4J Already Downloaded Skipping...
 ) ELSE (
-    %WGET% --no-check-certificate %URL_B4J% -P %DOWNLOADS%
+    echo Downloading B4J
+    %CURL% -k %URL_B4J% --output %DOWNLOADS%/%FILE_B4J%
 )
 
-IF EXIST "%DOWNLOADS%/B4A.exe" (
+IF EXIST "%DOWNLOADS%/%FILE_B4A%" (
     echo B4A Already Downloaded Skipping...
 ) ELSE (
-    %WGET% --no-check-certificate %URL_B4A% -P %DOWNLOADS%
+    echo Downloading B4A
+    %CURL% -k %URL_B4A% --output %DOWNLOADS%/%FILE_B4A%
 )
 
-IF EXIST "%DOWNLOADS%/B4R.exe" (
+IF EXIST "%DOWNLOADS%/%FILE_B4R%" (
     echo B4R Already Downloaded Skipping...
 ) ELSE (
-    %WGET% --no-check-certificate %URL_B4R% -P %DOWNLOADS%
+    echo Downloading B4R
+    %CURL% -k %URL_B4R% --output %DOWNLOADS%/%FILE_B4R%
 )
 
 :: ### Paid B4X Downloads #########################################################################
 
-IF EXIST "%DOWNLOADS%/B4I.exe" (
+IF EXIST "%DOWNLOADS%/%FILE_B4I%" (
     echo B4I Already Downloaded Skipping...
 ) ELSE (
-    %WGET% --no-check-certificate %URL_B4I% -P %DOWNLOADS%
+    echo Downloading B4I
+    %CURL% -k %URL_B4I% --output %DOWNLOADS%/%FILE_B4I%
+)
+
+IF EXIST "%DOWNLOADS%/%FILE_MACB%" (
+    echo B4I Build Server Already Downloaded Skipping...
+) ELSE (
+    echo Downloading B4I Build Server
+    %CURL% -k %URL_MACB% --output %DOWNLOADS%/%FILE_MACB%
 )
 
 :: ### SDK Downloads ##############################################################################

@@ -55,6 +55,14 @@ set /p PLATFORM_COPYRIGHT=< %PLATFORM_DIRECTORY%\.dist.copyright
 
 set DOWNLOADS=%PLATFORM_DIRECTORY%\downloads
 
+:: ### FILES ##########################################################################
+
+set FILE_B4J=B4J.exe
+set FILE_B4A=B4A.exe
+set FILE_B4R=B4R.exe
+set FILE_B4I=B4I.exe
+set FILE_MACB=B4iBuildServer.zip
+
 :: ### COMMANDS #######################################################################
 
 set WGET=%PLATFORM_DIRECTORY%\tools\bin\wget.exe
