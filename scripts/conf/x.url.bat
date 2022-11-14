@@ -27,3 +27,20 @@
 :: See the License for the specific language governing permissions and
 :: limitations under the License.
 ::-----------------------------------------------------------------------------------::
+
+:: ### Free B4X URL's #########################################################################
+
+set URL_B4J=https://www.b4x.com/b4j/files/B4J.exe
+set URL_B4A=https://www.b4x.com/android/files/B4A.exe
+set URL_B4R=https://www.b4x.com/b4r/files/B4R.exe
+
+:: ### Paid B4X URL's #########################################################################
+
+set URL_B4I="INSERT YOUR PAID URL HERE"
+
+:: ### SDK URL's #########################################################################
+
+set URL_JDK=https://b4xfiles-4c17.kxcdn.com/jdk-11.0.1.zip
+set URL_ASDK=https://dl.google.com/android/repository/commandlinetools-win-6609375_latest.zip
+set URL_ARES=https://b4xfiles-4c17.kxcdn.com/b4a/resources_06_21.zip
+set URL_AIDE=https://downloads.arduino.cc/arduino-1.8.18-windows.zip

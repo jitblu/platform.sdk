@@ -53,6 +53,8 @@ set /p PLATFORM_COPYRIGHT=< %PLATFORM_DIRECTORY%\.dist.copyright
 
 :: ### FILESYSTEM #####################################################################
 
+set DOWNLOADS=%PLATFORM_DIRECTORY%\downloads
+
 :: ### COMMANDS #######################################################################
 
 set WGET=%PLATFORM_DIRECTORY%\tools\bin\wget.exe

@@ -51,7 +51,7 @@ For %%A In (%*) Do (
 
     date /t
     echo  ================================== 
-    echo  *-------Carrierlane, Inc.--------*
+    echo  *----------JitBlu, Inc.----------*
     echo  ================================== 
     echo  Computer: %computername%        
     echo  ================================== 
@@ -106,8 +106,35 @@ echo ==================================
 
 echo Downloading Required Archives
 
-rmdir /s /q downloads 2> nul
+:: import base properties
+call scripts/conf/x.url.bat
+
+:: rmdir /s /q downloads 2> nul
 mkdir downloads 2> nul
+
+IF EXIST "%DOWNLOADS%/B4J.exe" (
+    echo B4J Already Downloaded Skipping...
+) ELSE (
+    %WGET% --no-check-certificate %URL_B4J% -P %DOWNLOADS%
+)
+
+IF EXIST "%DOWNLOADS%/B4A.exe" (
+    echo B4A Already Downloaded Skipping...
+) ELSE (
+    %WGET% --no-check-certificate %URL_B4A% -P %DOWNLOADS%
+)
+
+IF EXIST "%DOWNLOADS%/B4R.exe" (
+    echo B4R Already Downloaded Skipping...
+) ELSE (
+    %WGET% --no-check-certificate %URL_B4R% -P %DOWNLOADS%
+)
+
+IF EXIST "%DOWNLOADS%/B4I.exe" (
+    echo B4I Already Downloaded Skipping...
+) ELSE (
+    %WGET% --no-check-certificate %URL_B4I% -P %DOWNLOADS%
+)
 
 pause
 goto menu
