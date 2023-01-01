@@ -60,8 +60,14 @@ set DOWNLOADS=%PLATFORM_DIRECTORY%\downloads
 set FILE_B4J=B4J.exe
 set FILE_B4A=B4A.exe
 set FILE_B4R=B4R.exe
+
 set FILE_B4I=B4I.exe
 set FILE_MACB=B4iBuildServer.zip
+
+set FILE_JDK=jdk-11.0.1.zip
+set FILE_ASDK=commandlinetools-win-6609375_latest.zip
+set FILE_ARES=resources_06_21.zip
+set FILE_AIDE=arduino-1.8.18-windows.zip
 
 :: ### COMMANDS #######################################################################
 
@@ -69,3 +75,4 @@ set WGET=%PLATFORM_DIRECTORY%\tools\bin\wget.exe
 set CURL=%PLATFORM_DIRECTORY%\tools\bin\curl.exe
 set TOUCH=%PLATFORM_DIRECTORY%\tools\bin\touch.exe
 set UNAME=%PLATFORM_DIRECTORY%\tools\bin\uname.exe
+set EXTRACT=%PLATFORM_DIRECTORY%\tools\inno\innoextract.exe

@@ -106,7 +106,7 @@ echo ==================================
 
 echo Downloading Required Archives
 
-:: import base properties
+:: import url properties
 call scripts/conf/x.url.bat
 
 :: rmdir /s /q downloads 2> nul
@@ -153,28 +153,32 @@ IF EXIST "%DOWNLOADS%/%FILE_MACB%" (
 
 :: ### SDK Downloads ##############################################################################
 
-IF EXIST "%DOWNLOADS%/jdk-11.0.1.zip" (
+IF EXIST "%DOWNLOADS%/%FILE_JDK%" (
     echo JDK Already Downloaded Skipping...
 ) ELSE (
-    %CURL% -k %URL_JDK% --output %DOWNLOADS%/jdk-11.0.1.zip
+    echo Downloading Java Development Kit
+    %CURL% -k %URL_JDK% --output %DOWNLOADS%/%FILE_JDK%
 )
 
-IF EXIST "%DOWNLOADS%/commandlinetools-win-6609375_latest.zip" (
+IF EXIST "%DOWNLOADS%/%FILE_ASDK%" (
     echo Android SDK Already Downloaded Skipping...
 ) ELSE (
-    %WGET% --no-check-certificate %URL_ASDK% -P %DOWNLOADS%
+    echo Downloading Android SDK
+    %CURL% -k %URL_ASDK% --output %DOWNLOADS%/%FILE_ASDK%
 )
 
-IF EXIST "%DOWNLOADS%/resources_06_21.zip" (
+IF EXIST "%DOWNLOADS%/%FILE_ARES%" (
     echo Android Resources Already Downloaded Skipping...
 ) ELSE (
-    %CURL% -k %URL_ARES% --output %DOWNLOADS%/resources_06_21.zip
+    echo Downloading Android SDK Resources
+    %CURL% -k %URL_ARES% --output %DOWNLOADS%/%FILE_ARES%
 )
 
-IF EXIST "%DOWNLOADS%/arduino-1.8.18-windows.zip" (
+IF EXIST "%DOWNLOADS%/%FILE_AIDE%" (
     echo Arduino IDE Already Downloaded Skipping...
 ) ELSE (
-    %CURL% -k %URL_AIDE% --output %DOWNLOADS%/arduino-1.8.18-windows.zip
+    echo Downloading Arduino IDE
+    %CURL% -k %URL_AIDE% --output %DOWNLOADS%/%FILE_AIDE%
 )
 
 pause
